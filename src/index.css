@@ -1,0 +1,164 @@
+
+#sideBar {
+  /*display: flex;
+  width: 100%;
+  align-items: stretch;*/
+  height: 100vh;
+  /* animation: slide-open 2s forwards; */
+  /* position: fixed; */
+  /* background-color: #151719; */
+}
+
+/* @keyframes slide-open{
+  100% {left:0}
+} */
+
+
+.fasNav{
+  font-size: 29px;
+  
+}
+
+.back{
+  width: 50px;
+}
+
+  
+  .principal{
+    width: 100%;
+    background-color: rgb(211, 205, 205);
+  }
+
+  .listado-proyectos
+  {
+    overflow-y: auto;
+    height:30vh;
+    list-style:none;
+  }
+  .List-Tareas
+  {
+    overflow-y: auto;
+    height:45vh;
+  }
+
+  .tarea
+  {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #999;
+  }
+
+  .Proyecto:hover
+  {
+    border: solid 1px #999;
+    cursor: pointer;
+  }
+  .Proyecto
+  {
+    background-color: white;
+  }
+
+  .h3P{
+    font-size: 16px;
+  }
+
+  /*Pantalla de registro*/
+  
+  .body-registro
+  {
+    height: 100vh;
+    background-color: rgb(179, 234, 236);
+  }
+  .form-registro
+  {
+    border-radius: 20px;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+  
+  .form-registro
+  {
+    color: white;
+  }
+
+    /*Pantalla de Login*/
+  
+    .body-login
+    {
+      height: 100vh;
+      background-color: rgb(179, 234, 236);
+    }
+    .form-login
+    {
+      border-radius: 20px;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.582);
+    }
+    
+    .form-login
+    {
+      color: white;
+    }
+
+    .link{
+      color: white;
+      font-size: 17px;
+    }
+
+    .link:hover{
+      color: rgba(255, 255, 255, 0.801);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  .btn-blank
+  {
+    margin: 0;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+  border: none;
+
+  }
+  .btn-blank:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+
+  .btn-blank:hover {
+    cursor: pointer;
+  }
+
+  /*FORMULARIO DE TAREAS*/
+  .form-tarea
+  {
+    background-color: black;
+    color: white;
+  }
+ 
+
+  /* aside  {
+    padding: 3rem;
+    width: 20%;
+    
+    background-color: rgba(209, 206, 206, 0.945);
+  }
+
+   */
+   @media (min-width: 992px) { 
+
+  
+  /* .collapse:not(.show) {
+    display: none!important;
+  } */
+
+}
+@media (min-width: 576px) { 
+
+  
+
+}
