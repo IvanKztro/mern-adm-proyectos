@@ -93,7 +93,7 @@ const AuthState = (props) => {
             autenticarUsuario();
             
         } catch (error) {
-            //console.log(error.response)
+            console.log(error.response)
             const alerta = {
                 msg: error.response.data.msg,
                 categoria: 'alert-danger'

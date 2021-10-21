@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
 
 import ProyectoState from './context/proyectos/proyectoState';
 import TareaState from './context/tareas/tareaState';
@@ -25,13 +25,15 @@ function App() {
         <AlertaState>
           <AuthState>
             <ColaboradorState>
-            <Router>
+            <HashRouter basename="/">
               <Switch>
-                <Route exact path="/" component= {Login} />
-                <Route exact path="/Registro" component= {Registro} />
-                <RutasPrivadas exact path="/Proyectos" component= {Proyectos} />
+                <Route exact path='/' component= {Login} />
+                <Route exact path="/Registro" component= {Registro}>
+                </Route>
+                <RutasPrivadas exact path= "/Proyectos" component= {Proyectos}>
+                </RutasPrivadas>
               </Switch>
-            </Router>
+            </HashRouter>
             </ColaboradorState>
           </AuthState>
         </AlertaState>
